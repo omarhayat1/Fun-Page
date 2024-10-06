@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Fun Page</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #e74c3c;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+    .box {
+      background-color: #3498db;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: inline-block;
+      color: #fff;
+    }
+    #quote {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Random Website</h1>
+  <p>Refresh the page to get a new random thought!</p>
+  
+  <div class="box">
+    <p id="quote">Here’s a random thought...</p>
+  </div>
+
+  <script>
+    const quotes = [
+      "Life is like a sandwich, the more you add to it, the better it becomes!",
+      "If cats could talk, they probably wouldn’t.",
+      "Coding is 10% typing and 90% debugging.",
+      "The early bird gets the worm, but the second mouse gets the cheese.",
+      "Why don’t programmers like nature? It has too many bugs."
+    ];
+
+    // Select a random quote
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // Display the random quote in the box
+    document.getElementById('quote').textContent = randomQuote;
+  </script>
+</body>
+</html>
+    
